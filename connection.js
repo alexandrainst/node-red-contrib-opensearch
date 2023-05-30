@@ -1,7 +1,7 @@
 module.exports = function (RED) {
 
     const Y = require("yaml");
-    const { Client } = require('@elastic/elasticsearch');
+    const { Client } = require('@opensearch-project/opensearch');
     
     function EsConnectionNode(n) {
         RED.nodes.createNode(this, n);

@@ -68,7 +68,7 @@ Consider using [`event.injested`](https://www.elastic.co/guide/en/ecs/current/ec
     }
     
     RED.nodes.registerType('es-doc-tail',{
-        category: 'Elasticsearch',
+        category: 'OpenSearch',
         defaults: {
             name: {value: ''},
             index: {value: ''},
@@ -116,7 +116,7 @@ Consider using [`event.injested`](https://www.elastic.co/guide/en/ecs/current/ec
         inputs:0,
         outputs:2,
         outputLabels: ["Success", "Failure"],
-        icon: 'elasticsearch.png',
+        icon: 'opensearch.png',
         label: function() {
           return this.name || 'tail index';
         }

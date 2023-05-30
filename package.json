@@ -1,12 +1,16 @@
 {
-    "name": "nrc-elasticsearch-nodes",
-    "version": "0.3.10",
-    "description": "A set of Node-RED contributed (NRC) nodes for Elasticsearch including search, get, exists, create, update, delete, tail.",
+    "name": "node-red-contrib-opensearch",
+    "version": "0.1.0",
+    "description": "A set of Node-RED contributed nodes for OpenSearch including search, get, exists, create, update, delete, tail.",
     "author": {
-        "name": "Thorben Jändling",
-        "url": "https://github.com/ThorbenJ/nrc-elasticsearch-nodes"
+        "name": "Alexandre Alapetite",
+        "url": "https://github.com/Alkarex"
     },
     "contributors":[
+        {
+            "name": "Thorben Jändling",
+            "url": "https://github.com/ThorbenJ/nrc-elasticsearch-nodes"
+        },
         {
             "name": "Andre Alexandre Avila",
             "url": "https://github.com/chameleonbr/node-red-contrib-elasticsearch3"
@@ -22,6 +26,7 @@
     },
     "keywords": [
         "node-red",
+        "opensearch",
         "elasticsearch"
     ],
     "node-red": {
@@ -45,8 +50,8 @@
     },
     "license": "MIT",
     "dependencies": {
-        "@elastic/elasticsearch": ">=7.17.0",
+        "@opensearch-project/opensearch": ">=1.2.0",
         "mustache": ">=4.2.0",
-        "yaml": ">2.2.0"
+        "yaml": ">=2.3.1"
     }
 }

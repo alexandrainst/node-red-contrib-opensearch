@@ -155,7 +155,7 @@ module.exports = function(RED) {
     
     RED.nodes.registerType("es-doc-tail", Tail);
     
-    RED.httpAdmin.post("/es-doc-tail/:id/:state", RED.auth.needsPermission("elasticsearch.write"), function(req,res) {
+    RED.httpAdmin.post("/es-doc-tail/:id/:state", RED.auth.needsPermission("opensearch.write"), function(req,res) {
         var state = req.params.state;
         if (state !== 'enable' && state !== 'disable') {
             res.sendStatus(404);

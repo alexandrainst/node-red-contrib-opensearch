@@ -49,7 +49,7 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
 
 <script type="text/javascript">
     RED.nodes.registerType('es-doc-exists',{
-        category: 'Elasticsearch',
+        category: 'OpenSearch',
         defaults: {
             name: {value: ''},
             index: {value: ''},
@@ -64,7 +64,7 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
         inputs:1,
         outputs:2,
         outputLabels: ["Found", "Not-found"],
-        icon: 'elasticsearch.png',
+        icon: 'opensearch.png',
         label: function() {
           return this.name || 'document exists?';
         }

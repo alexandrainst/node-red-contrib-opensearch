@@ -1,9 +1,9 @@
-# nrc-elasticsearch-nodes
+# node-red-contrib-opensearch
 
-A set of [Node-RED](http://www.nodered.org) contributed (NRC) nodes for Elasticsearch including
+A set of [Node-RED](https://nodered.org/) contributed nodes for OpenSearch including
 search, get, exists, create, update, delete, tail.
 
-Using [@elastic/elasticsearch](https://github.com/elastic/elasticsearch-js)
+Using [@opensearch-project/opensearch](https://github.com/opensearch-project/opensearch-js)
 features, such as authentication.
 
 ### Note
@@ -18,7 +18,7 @@ Exporting your flow, and a quick regex replace, then reimporting them will fix m
 Run the following command in the root directory of your Node-RED install
 
 ```
-npm install nrc-elasticsearch-nodes
+npm install node-red-contrib-opensearch
 ```
 
 Recommended that you install `nrc-tjtoolkit-nodes` for the various helper nodes, such as `dedot` - which helps
@@ -28,10 +28,10 @@ with using mustache templates.
 ## Features
 
  - Shareable connection config node
- - All authentication schemes and other features (e.g. proxy) supported by `@elastic/elasticsearch` (none, basic, api-key, bearer)
+ - All authentication schemes and other features (e.g. proxy) supported by `@opensearch-project/opensearch` (none, basic, api-key, bearer)
  - Easily interpret input messages via mustache templates, including the use of context data
  - Nodes
-   - Connection - Config node for the connection to Elasticsearch
+   - Connection - Config node for the connection to Opensearch
    - Doc level =>
      - Create - Create a doc
      - Delete - Delete a doc
@@ -51,4 +51,4 @@ See the documentation in the (right hand side) help pane of Node-Red; or the hel
 
 ## Contributions
 
-A fork of a fork... See contributors in pacakges.js for projects this was based on
+A fork of forks... See contributors in packages.js for projects this was based on.

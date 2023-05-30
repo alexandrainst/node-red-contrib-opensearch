@@ -50,7 +50,7 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
 
 <script type="text/javascript">
     RED.nodes.registerType('es-doc-update',{
-        category: 'Elasticsearch',
+        category: 'OpenSearch',
         defaults: {
             name: {value: ''},
             index: {value: ''},
@@ -64,7 +64,7 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
         inputs:1,
         outputs:2,
         outputLabels: ["Success", "Failure"],
-        icon: 'elasticsearch.png',
+        icon: 'opensearch.png',
         align: 'right',
         label: function() {
           return this.name || 'update document';
