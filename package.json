@@ -25,9 +25,11 @@
 		"url": "https://github.com/alexandrainst/node-red-contrib-opensearch"
 	},
 	"keywords": [
+		"elasticsearch",
+		"node-red-contrib",
 		"node-red",
-		"opensearch",
-		"elasticsearch"
+		"nodered",
+		"opensearch"
 	],
 	"node-red": {
 		"version": ">=3.0.0",
