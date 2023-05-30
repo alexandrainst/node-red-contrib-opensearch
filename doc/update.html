@@ -1,4 +1,4 @@
-<script type="text/markdown" data-help-name="es-doc-update">
+<script type="text/markdown" data-help-name="os-doc-update">
 Updates a document, based on incoming message.
 
 ### Inputs
@@ -49,14 +49,14 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
 
 <script type="text/javascript">
     /* global RED:false, $:false */
-    RED.nodes.registerType('es-doc-update', {
+    RED.nodes.registerType('os-doc-update', {
         category: 'OpenSearch',
         defaults: {
             name: { value: '' },
             index: { value: '' },
             docId: { value: '{{{esDocId}}}' },
             content: { value: '{{payload}}' },
-            connection: { value: '', type: 'es-connection' },
+            connection: { value: '', type: 'os-connection' },
             loadContexts: { value: '' },
         },
         color: '#C0DEED',
@@ -88,7 +88,7 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
     });
 </script>
 
-<script type="text/html" data-template-name="es-doc-update">
+<script type="text/html" data-template-name="os-doc-update">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-pencil"></i> Name</label>
         <input type="text" id="node-input-name">

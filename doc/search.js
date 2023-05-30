@@ -119,5 +119,5 @@ module.exports = function (RED) {
             U.slateStatusClear(node);
         });
     }
-    RED.nodes.registerType('es-doc-search', Search);
+    RED.nodes.registerType('os-doc-search', Search);
 };

@@ -41,5 +41,5 @@ module.exports = function (RED) {
             U.slateStatusClear(node);
         });
     }
-    RED.nodes.registerType('es-index-exists', Exists);
+    RED.nodes.registerType('os-index-exists', Exists);
 };

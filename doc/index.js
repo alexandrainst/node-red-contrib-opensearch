@@ -62,5 +62,5 @@ module.exports = function (RED) {
             U.slateStatusClear(node);
         });
     }
-    RED.nodes.registerType('es-doc-index', Index);
+    RED.nodes.registerType('os-doc-index', Index);
 };

@@ -91,5 +91,5 @@ module.exports = function (RED) {
             U.slateStatusClear(node);
         });
     }
-    RED.nodes.registerType('es-doc-exists', Exists);
+    RED.nodes.registerType('os-doc-exists', Exists);
 };

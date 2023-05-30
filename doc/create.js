@@ -61,5 +61,5 @@ module.exports = function (RED) {
             U.slateStatusClear(node);
         });
     }
-    RED.nodes.registerType('es-doc-create', Create);
+    RED.nodes.registerType('os-doc-create', Create);
 };

@@ -32,17 +32,17 @@
 	"node-red": {
 		"version": ">=3.0.0",
 		"nodes": {
-			"es-doc-search": "doc/search.js",
-			"es-doc-create": "doc/create.js",
-			"es-doc-index": "doc/index.js",
-			"es-doc-exists": "doc/exists.js",
-			"es-doc-update": "doc/update.js",
-			"es-doc-delete": "doc/delete.js",
-			"es-doc-get": "doc/get.js",
-			"es-doc-tail": "doc/tail.js",
-			"es-index-create": "index/create.js",
-			"es-index-exists": "index/exists.js",
-			"es-connection": "connection.js"
+			"os-doc-search": "doc/search.js",
+			"os-doc-create": "doc/create.js",
+			"os-doc-index": "doc/index.js",
+			"os-doc-exists": "doc/exists.js",
+			"os-doc-update": "doc/update.js",
+			"os-doc-delete": "doc/delete.js",
+			"os-doc-get": "doc/get.js",
+			"os-doc-tail": "doc/tail.js",
+			"os-index-create": "index/create.js",
+			"os-index-exists": "index/exists.js",
+			"os-connection": "connection.js"
 		}
 	},
 	"engines": {

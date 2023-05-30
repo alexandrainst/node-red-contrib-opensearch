@@ -57,7 +57,7 @@ module.exports = function (RED) {
             return this._conn.child(c);
         };
     }
-    RED.nodes.registerType('es-connection', EsConnectionNode, {
+    RED.nodes.registerType('os-connection', EsConnectionNode, {
         credentials: {
             cred: { type: 'text' },
             ident: { type: 'text' },

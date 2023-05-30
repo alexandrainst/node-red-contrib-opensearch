@@ -1,4 +1,4 @@
-<script type="text/markdown" data-help-name="es-doc-delete">
+<script type="text/markdown" data-help-name="os-doc-delete">
 Deletes a document in a specific index.
 
 ### Inputs
@@ -46,13 +46,13 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
 
 <script type="text/javascript">
     /* global RED:false */
-    RED.nodes.registerType('es-doc-delete', {
+    RED.nodes.registerType('os-doc-delete', {
         category: 'OpenSearch',
         defaults: {
             name: { value: '' },
             docId: { value: '' },
             index: { value: '' },
-            connection: { value: '', type: 'es-connection' },
+            connection: { value: '', type: 'os-connection' },
             loadContexts: { value: '' },
         },
         color: '#C0DEED',
@@ -68,7 +68,7 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
     });
 </script>
 
-<script type="text/x-red" data-template-name="es-doc-delete">
+<script type="text/x-red" data-template-name="os-doc-delete">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-pencil"></i> Name</label>
         <input type="text" id="node-input-name">

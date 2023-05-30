@@ -53,5 +53,5 @@ module.exports = function (RED) {
             U.slateStatusClear(node);
         });
     }
-    RED.nodes.registerType('es-doc-delete', Delete);
+    RED.nodes.registerType('os-doc-delete', Delete);
 };

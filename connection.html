@@ -1,4 +1,4 @@
-<script type="text/markdown" data-help-name="es-connection">
+<script type="text/markdown" data-help-name="os-connection">
 Configure a connection to OpenSearch
 
 ### Options
@@ -26,7 +26,7 @@ maxRetries: 2
 
 <script type="text/javascript">
     /* global RED:false, $:false */
-    RED.nodes.registerType('es-connection', {
+    RED.nodes.registerType('os-connection', {
         category: 'config',
         defaults: {
             name: { value: '', required: true },
@@ -62,7 +62,7 @@ maxRetries: 2
     });
 </script>
 
-<script type="text/x-red" data-template-name="es-connection">
+<script type="text/x-red" data-template-name="os-connection">
     <div class="form-row">
         <label for="node-config-input-name"><i class="fa fa-pencil"></i> Name</label>
         <input type="text" id="node-config-input-name">
