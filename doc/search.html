@@ -46,31 +46,31 @@ If loadContexts is set, mustache templates will have access to `_` (hash).
 Its keys will be those listed in loadContexts, and values will be fetched from context stores.
 Values are fetch in this order: node, flow, global; with the first found being returned.
 This `_` does not become part of msg, and you wont have access to `_` in msg from mustache.
-
 </script>
 
 <script type="text/javascript">
-    RED.nodes.registerType('es-doc-search',{
+    /* global RED:false */
+    RED.nodes.registerType('es-doc-search', {
         category: 'OpenSearch',
         defaults: {
-            name: {value: ''},
-            index: {value: ''},
-            query: {value: ''},
-            sort: {value: ''},
-            composition: {value: ''},
-            limit: {value: ''},
-            connection: {value:"", type:"es-connection"},
-            loadContexts: {value: ""}
+            name: { value: '' },
+            index: { value: '' },
+            query: { value: '' },
+            sort: { value: '' },
+            composition: { value: '' },
+            limit: { value: '' },
+            connection: { value: '', type: 'es-connection' },
+            loadContexts: { value: '' },
         },
-        color:'#C0DEED',
-        paletteLabel: "doc search",
-        inputs:1,
-        outputs:2,
-        outputLabels: ["Success", "Failure"],
+        color: '#C0DEED',
+        paletteLabel: 'doc search',
+        inputs: 1,
+        outputs: 2,
+        outputLabels: ['Success', 'Failure'],
         icon: 'opensearch.png',
-        label: function() {
-          return this.name || 'search';
-        }
+        label: function () {
+            return this.name || 'search';
+        },
     });
 </script>
 
@@ -108,4 +108,3 @@ This `_` does not become part of msg, and you wont have access to `_` in msg fro
         <input type="text" id="node-input-loadContexts" placeholder="comma, separated, list" />
     </div>
 </script>
-

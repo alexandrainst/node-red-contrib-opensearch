@@ -1,0 +1,26 @@
+# http://EditorConfig.org
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.html]
+indent_size = 4
+indent_style = space
+
+[*.js]
+indent_size = 4
+indent_style = space
+
+[*.json]
+indent_style = tab
+
+[*.md]
+indent_size = 4
+indent_style = tab
+
+[*.yml]
+indent_size = 2
+indent_style = space

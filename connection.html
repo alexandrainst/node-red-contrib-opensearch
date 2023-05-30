@@ -25,40 +25,40 @@ maxRetries: 2
 </script>
 
 <script type="text/javascript">
-    /*global RED*/
-    RED.nodes.registerType('es-connection',{
+    /* global RED:false, $:false */
+    RED.nodes.registerType('es-connection', {
         category: 'config',
         defaults: {
-          name: {value:'', required: true},
-          nodes: {value:'', required:true},
-          advConfig: {value:''}
+            name: { value: '', required: true },
+            nodes: { value: '', required: true },
+            advConfig: { value: '' },
         },
         credentials: {
-            cred: {type: "text"},
-            ident: {type:"text"},
-            secret: {type:"password"}
+            cred: { type: 'text' },
+            ident: { type: 'text' },
+            secret: { type: 'password' },
         },
-        paletteLabel: "OpenSearch connection",
+        paletteLabel: 'OpenSearch connection',
         icon: 'opensearch.png',
-        label: function() {
-          return this.name || 'OpenSearch connection';
+        label: function () {
+            return this.name || 'OpenSearch connection';
         },
-        oneditprepare: function(){
+        oneditprepare: function () {
             this.advConfig_editor = RED.editor.createEditor({
                 id: 'node-config-input-advConfig-editor',
                 mode: 'ace/mode/yaml',
-                value: $("#node-config-input-advConfig").val()
+                value: $('#node-config-input-advConfig').val(),
             });
         },
-        oneditsave: function() {
-            $("#node-config-input-advConfig").val(this.advConfig_editor.getValue());
+        oneditsave: function () {
+            $('#node-config-input-advConfig').val(this.advConfig_editor.getValue());
             this.advConfig_editor.destroy();
             delete this.advConfig_editor;
         },
-        oneditcancel: function() {
+        oneditcancel: function () {
             this.advConfig_editor.destroy();
             delete this.advConfig_editor;
-        }
+        },
     });
 </script>
 
