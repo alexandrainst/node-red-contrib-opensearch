@@ -22,7 +22,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ThorbenJ/nrc-elasticsearch-nodes.git"
+		"url": "https://github.com/alexandrainst/node-red-contrib-opensearch"
 	},
 	"keywords": [
 		"node-red",

@@ -6,6 +6,8 @@ search, get, exists, create, update, delete, tail.
 Using [@opensearch-project/opensearch](https://github.com/opensearch-project/opensearch-js)
 features, such as authentication.
 
+> ℹ️ For Elasticsearch, see [this parent project](https://github.com/ThorbenJ/nrc-elasticsearch-nodes).
+
 ## Install
 
 Run the following command in the root directory of your Node-RED install
@@ -13,9 +15,6 @@ Run the following command in the root directory of your Node-RED install
 ```sh
 npm install node-red-contrib-opensearch
 ```
-
-Recommended that you install `nrc-tjtoolkit-nodes` for the various helper nodes, such as `dedot` - which helps
-with using mustache templates.
 
 ## Features
 
