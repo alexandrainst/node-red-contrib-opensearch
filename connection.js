@@ -51,6 +51,13 @@ module.exports = function (RED) {
             }
         }
 
+        if (!n.verifyservercert) {
+            if (!params.ssl) {
+                params.ssl = {};
+            }
+            params.ssl.rejectUnauthorized = false;
+        }
+
         this._conn = new Client(params);
 
         this.client = function (c) {

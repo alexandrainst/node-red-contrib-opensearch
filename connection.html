@@ -31,6 +31,7 @@ maxRetries: 2
         defaults: {
             name: { value: '', required: true },
             nodes: { value: '', required: true },
+            verifyservercert: { value: true, required: true },
             advConfig: { value: '' },
         },
         credentials: {
@@ -88,6 +89,10 @@ maxRetries: 2
     <div class="form-row">
         <label for="node-config-input-secret"><i class="fa fa-key"></i> Secret</label>
         <input type="password" id="node-config-input-secret">
+    </div>
+    <div class="form-row">
+        <input type="checkbox" id="node-config-input-verifyservercert" style="display: inline-block; width: auto; vertical-align: top;" />
+        <label for="node-config-input-verifyservercert" style="width: auto;">Verify server certificate</label>
     </div>
     <div class="form-row">
         <label for="node-config-input-advConfig"><i class="fa fa-pencil-square-o"></i> Adv. Config</label>
