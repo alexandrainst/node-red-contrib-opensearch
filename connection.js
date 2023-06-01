@@ -2,7 +2,7 @@ module.exports = function (RED) {
     const Y = require('yaml');
     const { Client } = require('@opensearch-project/opensearch');
 
-    function EsConnectionNode(n) {
+    function OsConnectionNode(n) {
         RED.nodes.createNode(this, n);
         const node = this;
         this.conf = n;
@@ -57,7 +57,7 @@ module.exports = function (RED) {
             return this._conn.child(c);
         };
     }
-    RED.nodes.registerType('os-connection', EsConnectionNode, {
+    RED.nodes.registerType('os-connection', OsConnectionNode, {
         credentials: {
             cred: { type: 'text' },
             ident: { type: 'text' },
