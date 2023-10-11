@@ -1,6 +1,6 @@
 {
 	"name": "node-red-contrib-opensearch",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A set of Node-RED contributed nodes for OpenSearch including search, get, exists, create, update, delete, tail.",
 	"author": {
 		"name": "Alexandre Alapetite",
@@ -58,10 +58,10 @@
 	},
 	"devDependencies": {
 		"eslint": "^8.51.0",
-		"eslint-config-standard": "^17.0.0",
+		"eslint-config-standard": "^17.1.0",
 		"eslint-plugin-html": "^7.1.0",
 		"eslint-plugin-import": "^2.28.1",
-		"eslint-plugin-n": "^16.1.0",
+		"eslint-plugin-n": "^16.2.0",
 		"eslint-plugin-promise": "^6.1.1"
 	},
 	"scripts": {
