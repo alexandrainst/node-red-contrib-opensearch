@@ -52,9 +52,9 @@
 	},
 	"license": "MIT",
 	"dependencies": {
-		"@opensearch-project/opensearch": ">=2.8.0",
+		"@opensearch-project/opensearch": ">=2.10.0",
 		"mustache": ">=4.2.0",
-		"yaml": ">=2.4.2"
+		"yaml": ">=2.4.5"
 	},
 	"devDependencies": {
 		"eslint": "^8.57.0",
